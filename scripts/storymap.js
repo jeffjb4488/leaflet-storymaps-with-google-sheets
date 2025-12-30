@@ -260,7 +260,8 @@ $(window).on('load', function() {
         .append('<p class="chapter-header">' + c['Chapter'] + '</p>')
         .append(media ? mediaContainer : '')
         .append(media ? source : '')
-        .append('<p class="description">' + c['Description'] + '</p>');
+        .append('<p class="description">' + <link href="https://cdn.knightlab.com/libs/soundcite/latest/css/player.css" rel="stylesheet" type="text/css"> +
+<script src="https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>" + c['Description'] + '</p>');
 
       $('#contents').append(container);
 
