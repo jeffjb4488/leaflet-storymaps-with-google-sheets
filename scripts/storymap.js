@@ -95,15 +95,6 @@ $(window).on('load', function() {
     }).addTo(map);
   }
 
-  var overlay_1890 = 'https://map-tile.server.jeffreyjburnett.com/Plan_Map_of_the_Highlands_1890_best_imagery_4326_largest/{z}/{x}/{y}.png';
-  
-  var overlayLayer1890 = L.tileLayer(overlay_1890, {
-  noWrap: true,
-  maxZoom: 20,
-  minZoom: 11,
-  opacity: 0.6,
-}).addTo(map);
-
   function initMap(options, chapters) {
     createDocumentSettings(options);
 
