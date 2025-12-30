@@ -83,16 +83,10 @@ $(window).on('load', function() {
    * Loads the basemap and adds it to the map
    */
   function addBaseMap() {
-    var basemap = trySetting('_tileProvider', 'Stamen.TonerLite');
-    L.tileLayer.provider(basemap, {
-      maxZoom: 18,
-      
-      // Pass the api key to most commonly used parameters
-      apiKey: trySetting('_tileProviderApiKey', ''),
-      apikey: trySetting('_tileProviderApiKey', ''),
-      key: trySetting('_tileProviderApiKey', ''),
-      accessToken: trySetting('_tileProviderApiKey', '')
-    }).addTo(map);
+    var basemap = L.tileLayer.provider('MapBox', {
+    id: 'mapbox://styles/jeffjb4488/cmjsr8nsk004001sa7i17gjn8',
+    accessToken: 'pk.eyJ1IjoiamVmZmpiNDQ4OCIsImEiOiJjazl0enBmbzYxYjhjM21tcnlzMjIxZnNsIn0.Lh5g7l7iPRkfpF4exzE8jA'
+}).addTo(map);
   }
 
   function initMap(options, chapters) {
